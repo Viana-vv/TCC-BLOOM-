@@ -1,0 +1,176 @@
+body{
+   
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+border-radius: 30px;
+    width: 300px;
+ height: 300px;   
+border: solid #dce2b3;
+box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.Caixa{
+    display: flex;
+    background-color:  #000000;;
+    border-color: #dce2b3;
+    border:  solid 3px;
+    color: #dce2b3;
+    width: 900px;
+    height: auto;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-decoration: none;
+border-radius: 30px;
+}
+.Caixa .dentro{
+
+    display: flex;
+    width: 400px;
+    height: auto;
+} 
+.Caixa .dentro ul{
+    display: flex;
+    list-style: none;
+ flex-direction: column;
+}
+
+input{
+    margin-top: 20px;
+    font-size: large;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+input:hover{
+    background-color: #dce2b3;
+    color: black;
+     border-end-end-radius: 20px;
+      box-shadow: 0 10px 10px #dce2b3;
+}
+
+select{
+    margin-top: 20px;
+    font-size: large;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+select:hover{
+    background-color: #dce2b3;
+    color: black;
+     border-end-end-radius: 20px;
+      box-shadow: 0 10px 10px #dce2b3;
+}
+
+button{
+  margin-bottom: 5px;
+    width: 350px;
+    height: 50px;
+ font-size: large;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #3f9142;
+    color: #000000;
+}
+
+button:hover{
+    background-color: #dce2b3;
+    color: #234124;
+}
+
+ul li{
+    margin-top: 20px;
+}
+
+p b {
+font-size: x-large;
+}
+
+
+
+.sair{
+  margin-bottom: 5px;
+    width: 100px;
+    height: 50px;
+ font-size: large;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.sair:hover{
+    background-color: #dce2b3;
+    color: #412323;
+}
+label{
+    font-size: x-large;
+}
+
+@media (max-width:600px){
+
+     .Caixa{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    .dentro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+  
+label{
+    font-size: x-large;
+}
+    input{
+    font-size: medium;
+    width: 299px;
+    height: 40px;
+    border-radius: 8px;
+
+   } 
+    input:hover{
+    background-color: #dce2b3;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-end-end-radius: 20px;
+   }
+
+     select{
+    font-size: medium;
+    width: 299px;
+    height: 40px;
+    border-radius: 8px;
+
+   } 
+    select:hover{
+    background-color: #dce2b3;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-end-end-radius: 20px;
+   }
+
+    p b {
+    font-size: x-large;
+    }
+
+}
+
+

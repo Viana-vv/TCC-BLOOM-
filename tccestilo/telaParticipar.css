@@ -1,0 +1,134 @@
+body{
+   
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+border-radius: 30px;
+    width: 200px;
+ height: 200px;   
+border: solid #dce2b3;
+box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.Caixa{
+    display: flex;
+    background-color:  #000000;;
+    border-color: #dce2b3;
+    border:  solid 3px;
+    color: #dce2b3;
+    width: 900px;
+    height: auto;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-decoration: none;
+border-radius: 30px;
+}
+.Caixa .dentro{
+
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+    width: auto;
+    height: auto;
+} 
+.Caixa .dentro ul{
+    display: flex;
+    list-style: none;
+ flex-direction: column;
+}
+
+ 
+button{
+  margin-bottom: 5px;
+    width: 350px;
+    height: 50px;
+ font-size: large;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #860909;
+    color: #ffffff;
+}
+
+button:hover{
+    background-color: #dce2b3;
+    color: #412323;
+ 
+}
+
+
+ul li{
+    margin-top: 20px;
+    margin-bottom:  10px;
+}
+h3 {
+    margin-left: 15px;
+}
+
+h2 {
+    margin-left: 15px;
+}
+
+@media (max-width:900px){
+    
+ 
+     .Caixa{
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    .dentro{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    img{
+       
+        width: 100px;
+        height: 100px;
+    }
+    button{
+        width: 100%;
+        height: 50px;
+     font-size: medium;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+.card{
+    width: 100%;
+    max-width: 250px;
+}
+
+.Caixa  h3{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: medium;
+}
+
+}
+
+
+p b {
+   
+    
+margin: 20px;
+
+    font-size: medium;
+    }
+
+
+

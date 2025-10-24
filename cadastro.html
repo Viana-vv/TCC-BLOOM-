@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de cadastro</title>
+    <link rel="stylesheet" href="tccestilo/cadastro.css">
+        <link rel="icon" href="imgtcc/pet.jpeg">
+  
+</head>
+
+<body>
+
+<form id="formCadastro" action="valida_cadastro.php" method="post">
+    <div class="central">
+        <div class="caixa">
+            <ul>
+                <li  style="justify-content: center; align-items: center; color:  #dce2b3;
+                font-size: small;
+                "><h1>Faça seu cadastro aqui</h1></li>
+                <li>
+                    <p> <b>Nome:</b></p>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+
+                </li>
+                <li>
+                    <p> <b>CPF:</b></p>
+                    <input type="" name="cpf" id="cpf" placeholder="">
+
+                </li>
+                <li>
+                    <p> <b>Rua:</b></p>
+                    <input type="text" name="rua" id="rua" placeholder="Rua:">
+                </li>
+                 <li>
+                    <p> <b>Bairro:</b></p>
+                    <input type="text" name="bairro" id="bairro" placeholder=" Bairro:">
+                </li>
+                   <li>
+                <p> <b>Estado:</b></p>
+                <select name="estado" id="estado" >
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                 <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                 <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                 <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                 <option value="MT">Mato Grosso </option>
+                <option value="MS">Mato Grosso do Sul</option>
+                 <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                 <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                 <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                 <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                 <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                 <option value="TO">Tocantins</option>
+    
+            </select>   
+            </li> 
+
+                <li>
+                    <p> <b>Data de nascimento:</b></p>
+                    <input 
+                    type="date" 
+                    name="data"
+                     id="data"
+                      placeholder="Data de nascimento"
+                    required
+                    min="1950-01-01"
+                    max="2025-01-01"
+                    >
+                </li>
+                <li>
+                    <p> <b>Numero de telefone:</b></p>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx">
+
+                </li>
+                <li>
+                    <p> <b>Email:</b></p>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+                </li>
+                <li>
+                    <p> <b>Crie uma senha:</b></p>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                </li>
+            <li>
+            <div class="btn">
+                &nbsp;
+                <button type="submit" >Cadastrar</button>
+                &nbsp;
+                &nbsp;
+            </li> 
+                <p>
+                    <a href="login.html" style="text-decoration: none;color: aliceblue;">já tem um cadastro? </a>
+                <a href="login.html" alt="botão para area de login"> Sim, Login </a>
+    
+                </p>
+            </div>
+            </ul>
+        </div>
+    </div>
+</form>
+   <script>
+document.getElementById("formCadastro").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+const dataNascimento = document.getElementById("data").value;
+const email = document.getElementById("email").value;
+const hoje = new Date();
+const nascimento = new Date(dataNascimento);
+const idade = hoje.getFullYear() - nascimento.getFullYear();
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(email)){
+    alert("E-mail inválido! por favor insira um e-mail valido");
+    return;
+}
+
+if (idade < 18 || idade > 100){
+alert("Você deve ter entre 18 e 100 anos para fazer cadastro.");
+return;
+}
+
+this.submit();
+});
+
+   </script>
+    <script>
+    document.getElementById("email").addEventListener("blur", function() {
+    const email = this.value();
+ 
+    fetch('verificaEmail.php?email=${email}')
+    .then(response => response.json())
+    .then(data=>{
+if(data.existe){
+    alert("Este E-mail já está cadastrado!");
+    this.value = "";
+}
+    });
+});
+    </script>
+</body>
+
+</html>

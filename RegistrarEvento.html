@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tccestilo/evento.css">
+    <title>Registrar Bloom</title>
+    <link rel="icon" href="imgtcc/pet.jpeg">
+</head>
+
+<body>
+    <form id="formRegistrar" method="post" action="valida_registro.php">
+    
+        <div class="Caixa">
+            <h1>Criar Evento</h1>
+                 <div> 
+                    <img src="imgtcc/pet.jpeg" alt="Imagem da logo"></div>
+
+            <div class="dentro">
+                <ul>
+                    <li>
+                        <p> <b>Titulo do Evento</b></p>
+                        <input type="text" name="titulo" id="titulo" placeholder="Digite o titulo do evento" alt="Area para colocar titulo:">
+                    </li>
+                       <li>
+                    <p><b>Descrição do evento:</b></p>
+                    <textarea 
+                    
+                    rows="10"
+                    cols="35"
+                    name="descricao" 
+                    id="descricao"
+                     placeholder="Digite a descrição/motivo para o evento "
+                      alt="Area para colocar descrição:"> </textarea>
+                     </li>
+                 <li>
+
+  <p><b>Rua:</b></p>
+                    <input type="text"
+                    name="rua" 
+                    id="rua"
+                     placeholder="Digite o nome da rua"
+                      alt="Area para colocar o endereço:"> 
+               </li>
+                          <li>
+  <p><b>Bairro:</b></p>
+                    <input type="text"
+                    name="bairro" 
+                    id="bairro"
+                     placeholder="Digite o nome do bairro "
+                      alt="Area para colocar o endereço:"> 
+               </li>
+                          <li>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado" >
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                 <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                 <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                 <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                 <option value="MT">Mato Grosso </option>
+                <option value="MS">Mato Grosso do Sul</option>
+                 <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                 <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                 <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                 <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                 <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                 <option value="TO">Tocantins</option>
+    
+            </select>   
+            </li>
+                     <li>
+  <p><b>Data evento:</b></p>
+                    <input type="date"
+                    name="data_evento" 
+                    id="data_evento"
+                      alt="Area para colocar a data:"> 
+               </li>
+
+  <li>
+  <p><b>Horario:</b></p>
+                    <input type="time"
+                    name="horas" 
+                    id="horas"
+                      alt="Area para colocar a hora:"> 
+               </li>
+
+
+                </ul>
+            </div>
+            <br>
+            <br>
+            <br>
+            <button type="submit" alt="Botão para fazer registro"> Registrar</button>
+     <button name="sair" type="button" alt="Botão para sair" class="sair" onclick="window.location.href='telaOngs.php'" >Sair</button>
+          
+            <p>
+    
+            </p>
+        </div>
+    </form>
+     
+
+ </script>
+    </body>
+
+
+
+</html>

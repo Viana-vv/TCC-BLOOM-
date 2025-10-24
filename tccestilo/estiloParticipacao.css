@@ -1,0 +1,208 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 70vw;
+    height: auto;
+    background-color: aqua;
+display: flex;
+flex-direction: column;
+
+}
+
+.Box1{
+    background-color: rgb(255, 255, 255);
+width: auto;
+height: 25vh;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+border-left: 5px solid  rgb(0, 0, 0);
+border-right: 5px solid  rgb(0, 0, 0);
+border-top: 5px solid  rgb(0, 0, 0);
+}
+h1{
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Box2{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+height: auto;
+color: black;
+display: flex;
+flex-direction: column;
+
+}
+
+.Acima{
+   background-color: rgb(7, 78, 25);
+    width: auto;
+height: 25vh;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+border-left: 5px solid  rgb(0, 0, 0);
+border-right: 5px solid  rgb(0, 0, 0);
+
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.Abaixo{
+   background-color: rgb(255, 255, 255);
+    width: auto;
+height: auto;
+color: black;
+border-end-start-radius: 30%;
+border-end-end-radius: 30%;
+border-left: 5px solid  rgb(0, 0, 0);
+border-right: 5px solid  rgb(0, 0, 0);
+overflow: hidden;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ;
+    border-color: 10px solid rgb(0, 0, 0) ;
+    transform: translateY(40%);
+}
+ul{
+    margin-left: 70px;
+    list-style: none;
+     margin-bottom: 10px;
+}
+
+li{
+     margin-top: 10px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+b{
+     margin-top: 10px;
+}
+
+
+button.comentarios{
+  margin-bottom: 5px;
+    width: auto;
+    height: auto;
+ font-size: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #128700;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.comentarios:hover{
+    background-color: #dce2b3;
+    color: #412323;
+ 
+}
+
+@media (max-width: 900px) {
+    
+.container{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+display: flex;
+flex-direction: column;
+
+}
+
+.Box1{
+    background-color: rgb(255, 255, 255);
+width: auto;
+height: 25vh;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+border-left: 5px solid  rgb(0, 0, 0);
+border-right: 5px solid  rgb(0, 0, 0);
+border-top: 5px solid  rgb(0, 0, 0);
+
+}
+h1{
+margin-left: 10px;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Box2{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+height: auto;
+color: black;
+display: flex;
+flex-direction: column;
+
+}
+
+.Acima{
+   background-color: rgb(7, 78, 25);
+    width: auto;
+height: 25vh;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+border-left: 5px solid  rgb(0, 0, 0);
+border-right: 5px solid  rgb(0, 0, 0);
+overflow: hidden;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.Abaixo{
+   background-color: rgb(255, 255, 255);
+    width: auto;
+height: auto;
+color: black;
+border-end-start-radius: 30%;
+border-end-end-radius: 30%;
+border-left: 5px solid  rgb(0, 0, 0);
+border-right: 5px solid  rgb(0, 0, 0);
+overflow: hidden;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+    border-color: 10px solid rgb(0, 0, 0) ;
+    transform: translateY(40%);
+}
+ul{
+    list-style: none;
+    margin-left: 15vw;
+}
+
+li{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+}
+button{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    transform: translateY(-10px);
+}

@@ -1,0 +1,89 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+   
+}
+.navbar a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.icn a{
+height: 120;
+width: 120;
+border-radius: 3px;
+display: flex;
+}
+
+
+/*Aqui temos a edição da imagem e a Animação a baixo*/
+
+.container {
+    display: flex;
+width: 100%;
+justify-content: center;
+justify-items: center;
+} 
+.container img{
+position: relative;
+animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar {
+0%{
+    top: 0%;
+}
+100%{
+    top: 20px;
+}
+}
+
+.centralizar{
+display: block;
+align-items: center;
+justify-content: center;
+
+}
+.teste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+display: flex;
+    list-style: none;
+     align-items: center;
+    justify-content: center;
+    background-color: rgb(159, 168, 168);
+    width: 900px;
+border-radius: 20px;
+margin-top: 10px;
+    }
+    .center ul{
+        display: block;
+        list-style: none;
+       
+    }
+    
+    .center ul li{
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao{
+background-color: #cf4242;
+    }

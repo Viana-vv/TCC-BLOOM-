@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tccestilo/trocaSenha.css">
+    <title>Trocar Senha</title>
+    <link rel="icon" href="imgtcc/pet.jpeg">
+</head>
+
+<body>
+    <form  method="post" action="AtualizarSenha.php" onsubmit="return validarSenha()">
+    
+        <div class="Caixa">
+            <h1>Digite a nova senha:</h1>
+                 <div> 
+            <div class="dentro">
+                <ul>
+                    
+                    <li>
+                        <p> <b>Senha:</b></p>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua nova senha:" alt="Area para colocar o cpf: " required>
+                    </li>
+            <li>
+                       <p> <b>Confirmar senha:</b></p>
+                        <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Digite novamente a nova senha:" alt="Area para colocar o cpf: " required>
+                 
+            </li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <br>
+            <button   type="submit" alt="Botão para enviar o email">Enviar</button>
+        </form>   
+            <form action="login.html">
+             <button class="sair" type="submit" alt="Botão para fazer login" >Voltar</button>
+           </form>
+        </div>
+    
+     
+    </body>
+<script>
+function validarSenha(){
+let senha = document.getElementById("senha").value;
+let confirmaSenha = document.getElementById("confirmaSenha").value;
+
+if(senha !=  confirmaSenha){
+    alert("As senhas devem ser iguais!.");
+    return false;
+}
+return true;
+
+}
+</script>
+
+
+</html>
